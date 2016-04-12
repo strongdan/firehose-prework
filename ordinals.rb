@@ -13,7 +13,10 @@ dig = num % 10
 
 # Fourth, depending on the right-most digit (equal to the input number modulo 10) 
 # that comes back, determine the suffix and display a message to the user.
-if dig == 1
+if num > 10 && num < 14
+  suf = 'th'
+  # 11 through 13 have the suffix -th
+elsif dig == 1
   # If the right-most digit equals 1, the suffix should be st
   suf = 'st'
 elsif dig == 2
